@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+*,
+ ::before,
+ ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(173, 44, 44);
+    border-radius: 10px;
+}
+
+
+/*  */

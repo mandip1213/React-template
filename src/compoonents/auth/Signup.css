@@ -1,0 +1,125 @@
+/*custom font*/
+
+#signup-form .auth-title {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.25rem 1rem;
+}
+
+#signup-form .auth-subtitle {
+    font-weight: normal;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+/*form styles*/
+
+#signup-form {
+    box-shadow: 0 0 10px 2px var(--special-text-color);
+    width: 400px;
+    margin: 2rem auto;
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#signup-form fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
+/*inputs*/
+
+#signup-from .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.input-container input,
+.input-container textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    /* font-family: montserrat; */
+    color: #2C3E50;
+}
+
+
+/*buttons*/
+
+#signup-form .action-button {
+    width: 100px;
+    background-color: rgba(39, 174, 95, 0.8);
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+
+#signup-form .action-button:hover,
+#signup-form .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+    background-color: rgba(39, 174, 95, 1);
+}
+
+
+.to-login {
+    text-align: center;
+}
+
+
+/*marking active/completed steps green*/
+
+@media screen and (max-width:500px) {
+    #signup-form {
+        margin: 1rem auto;
+        width: 90vw;
+    }
+    #signup-form fieldset {
+        padding: 1rem 0.5rem;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:370px) {
+    #signup-form {
+        width: 95vw;
+    }
+    #signup-form fieldset {
+        padding: 1rem 0.5rem;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    #signup-form {
+        width: 100vw;
+    }
+    #signup-form fieldset {
+        padding: 1rem 0.5rem;
+        width: 95%;
+    }
+}

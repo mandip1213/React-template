@@ -1,0 +1,128 @@
+.error {
+    margin-top: 1rem;
+    color: red;
+    text-align: center;
+    font-size: 1rem;
+    background-color: rgb(242, 222, 222);
+    padding: 0.25rem;
+}
+
+#login-form .auth-title {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.25rem 1rem;
+}
+
+#login-form .auth-subtitle {
+    font-weight: normal;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+/*
+#login-form {
+    width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+    position: relative;
+} */
+
+#login-form fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    /* margin: 0 1rem; */
+    margin: auto;
+    /*stacking fieldsets above each other*/
+    /* position: relative; */
+}
+
+#login-form>* {
+    margin-top: 1rem;
+}
+
+#login-form .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.input-container input,
+.input-container textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    /* font-family: montserrat; */
+    color: #2C3E50;
+}
+
+.label {
+    display: block;
+}
+
+.password-input {
+    position: relative;
+}
+
+.password-input>span {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translatey(-45%);
+    cursor: pointer;
+}
+
+.cross-eye:after {
+    position: absolute;
+    content: ' ';
+    left: 50%;
+    top: 50%;
+    transform: translate(-55%, -55%) rotate(-45deg);
+    /* transform: rotate(-45deg); */
+    width: 3px;
+    height: 80%;
+    background-color: #333;
+}
+
+.password-input {
+    align-self: stretch;
+}
+
+.to-signup {
+    text-align: center;
+}
+
+#login-form .action-button {
+    width: 100px;
+    background-color: rgba(39, 174, 95, 0.8);
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+.login.action-button {
+    /* align-self: stretch !important; */
+    width: 100% !important
+}
+
+#login-form .action-button:hover,
+#login-form .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+    background-color: rgba(39, 174, 95, 1);
+}
